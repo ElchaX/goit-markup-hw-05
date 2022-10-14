@@ -11,21 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header-style">
+      <nav class="navbar">
         <a href="#" class="logo"
           >Web<span class="logoSecondColor">Studio</span></a
         >
-        <ul>
+        <ul class="navbar">
           <li><a href="./index.html" class="navLink">Studio</a></li>
           <li><a href="./portfolio.html" class="navLink">Portfolio</a></li>
           <li><a href="#" class="navLink">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="header-contacts">
         <li>
           <a href="mailto:info@devstudio.com" class="navAdress">
             info@devstudio.com
@@ -37,73 +38,75 @@
       </ul>
     </header>
     <main>
-      <section>
+      <section class="bannerSection">
         <h1 class="mainSign">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
         <button type="button" class="indexButton">Request our service</button>
       </section>
-      <section>
-        <h2></h2>
-        <ul>
-          <li>
-            <h3 class="textBlockTitle">ATTENTION TO DETAILS</h3>
-            <p class="textBlock">
-              We go into all the details and processes of your business to
-              develop a customized solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="textBlockTitle">PUNCTUALITY</h3>
-            <p class="textBlock">
-              With us, you can feel safe and secure. An important principle of
-              the company: respect your time and respect the agreed deadlines.
-            </p>
-          </li>
-          <li>
-            <h3 class="textBlockTitle">PLANNING</h3>
-            <p class="textBlock">
-              You will be able to observe and participate in every phase of
-              solution development and implementation.
-            </p>
-          </li>
-          <li>
-            <h3 class="textBlockTitle">MODERN TECHNOLOGIES</h3>
-            <p class="textBlock">
-              We use innovative tools to solve assigned tasks. It's time to
-              simplify work processes.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="sectionTitle">What we do</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/wwd1.jpg"
-              width="370"
-              height="294"
-              alt="programista przy pracy"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/wwd2.jpg"
-              width="370"
-              height="294"
-              alt="tworzenie aplikacji mobilnych"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/wwd3.jpg"
-              width="370"
-              height="294"
-              alt="webdesigner przy pracy"
-            />
-          </li>
-        </ul>
-      </section>
-      <section>
+      <div class="whatWeDo">
+        <section>
+          <h2 class="emptyHeader"></h2>
+          <ul>
+            <li>
+              <h3 class="textBlockTitle">ATTENTION TO DETAILS</h3>
+              <p class="textBlock">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li>
+              <h3 class="textBlockTitle">PUNCTUALITY</h3>
+              <p class="textBlock">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and respect the agreed deadlines.
+              </p>
+            </li>
+            <li>
+              <h3 class="textBlockTitle">PLANNING</h3>
+              <p class="textBlock">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li>
+              <h3 class="textBlockTitle">MODERN TECHNOLOGIES</h3>
+              <p class="textBlock">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="sectionTitle">What we do</h2>
+          <ul>
+            <li>
+              <img
+                src="./images/wwd1.jpg"
+                width="370"
+                height="294"
+                alt="programista przy pracy"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/wwd2.jpg"
+                width="370"
+                height="294"
+                alt="tworzenie aplikacji mobilnych"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/wwd3.jpg"
+                width="370"
+                height="294"
+                alt="webdesigner przy pracy"
+              />
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="teamSection">
         <h2 class="sectionTitle">Our Team</h2>
         <ul>
           <li>
@@ -153,7 +156,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer-style">
       <a href="./index.html" class="logo"
         >Web<span class="logoSecondColor">Studio</span></a
       >
