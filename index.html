@@ -15,36 +15,52 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-    <header class="header-style">
-      <nav class="navbar">
-        <a href="#" class="logo"
-          >Web<span class="logoSecondColor">Studio</span></a
-        >
-        <ul class="navbarLinks">
-          <li><a href="./index.html" class="navLink">Studio</a></li>
-          <li><a href="./portfolio.html" class="navLink">Portfolio</a></li>
-          <li><a href="#" class="navLink">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="navAdress">
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="Tel:+380961111111" class="navAdress"> +38 096 111 11 11 </a>
-        </li>
-      </ul>
+    <header>
+      <div class="border-div">
+        <div class="container">
+          <div class="header-style">
+            <nav class="navbar">
+              <a href="#" class="logo"
+                >Web<span class="logoSecondColor">Studio</span></a
+              >
+              <ul class="navbarLinks">
+                <li><a href="./index.html" class="navLink">Studio</a></li>
+                <li>
+                  <a href="./portfolio.html" class="navLink">Portfolio</a>
+                </li>
+                <li><a href="#" class="navLink">Contacts</a></li>
+              </ul>
+            </nav>
+            <ul class="header-contacts">
+              <li>
+                <a href="mailto:info@devstudio.com" class="navAdress">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="navNumber">
+                <a href="Tel:+380961111111" class="navAdress">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="bannerSection section">
-        <h1 class="mainSign">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button" class="indexButton">Request our service</button>
+      <section class="section bannerBg">
+        <div class="container">
+          <div class="bannerSection">
+            <h1 class="mainSign">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+            <button type="button" class="indexButton">
+              Request our service
+            </button>
+          </div>
+        </div>
       </section>
-     
-        <section class="section">
+
+      <section class="section">
+        <div class="container">
           <h2 class="emptyHeader"></h2>
           <ul class="rulesList">
             <li class="rulesItem">
@@ -76,8 +92,11 @@
               </p>
             </li>
           </ul>
-        </section>
-        <section class="section ">
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="rulesDiv">
           <h2 class="sectionTitle">What we do</h2>
           <ul class="wwdList">
             <li>
@@ -105,9 +124,13 @@
               />
             </li>
           </ul>
-        </section>
-      
+        </div>
+        </div>
+      </section>
+
       <section class="teamSection section">
+        <div class="container">
+<div class="teamDiv">
         <h2 class="sectionTitle">Our Team</h2>
         <ul class="teamList">
           <li>
@@ -117,10 +140,12 @@
               height="260"
               alt="zdjęcie Christophera Walkera"
             />
-
+<div class="photoDescription">
             <h3 class="memberName">Christopher Walker</h3>
             <p class="memberDescription">Product Designer</p>
+            </div>
           </li>
+          
           <li>
             <img
               src="./images/teammember2.jpg"
@@ -128,9 +153,10 @@
               height="260"
               alt="zdjęcie Kylie Evans"
             />
-
+<div class="photoDescription">
             <h3 class="memberName">Kylie Evans</h3>
             <p class="memberDescription">Frontend Developer</p>
+            </div>
           </li>
           <li>
             <img
@@ -139,9 +165,10 @@
               height="260"
               alt="zdjęcie Ryana Harrisa"
             />
-
+<div class="photoDescription">
             <h3 class="memberName">Ryan Harris</h3>
             <p class="memberDescription">Marketing</p>
+            </div>
           </li>
           <li>
             <img
@@ -150,35 +177,43 @@
               height="260"
               alt="zdjęcie Tylera Moore"
             />
-
+<div class="photoDescription">
             <h3 class="memberName">Tyler Moore</h3>
             <p class="memberDescription">UI Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
+        </div>
       </section>
+      
     </main>
-    <footer class="footer-style">
-      <a href="./index.html" class="logo"
-        >Web<span class="logoFooterColor">Studio</span></a
-      >
-      <address>
-        <p class="footerAdress">
-          695 Park Ave, New York, NY 10065, United States
-        </p>
-        <ul class="footerContactList">
-          <li>
-            <a href="mailto:info@example.com" class="footerContact">
-              info@example.com
-            </a>
-          </li>
-          <li>
-            <a href="Tel:+1212-772-4150" class="footerContact">
-              +1 212-772-4150
-            </a>
-          </li>
-        </ul>
-      </address>
+    <footer>
+      <div class="footerBg">
+        <div class="container">
+          <div class="footer-style">
+          <a href="./index.html" class="logo"
+            >Web<span class="logoFooterColor">Studio</span></a
+          >
+          <address>
+            <p class="footerAdress">
+              695 Park Ave, New York, NY 10065, United States
+            </p>
+            <ul class="footerContactList">
+              <li>
+                <a href="mailto:info@example.com" class="footerContact">
+                  info@example.com
+                </a>
+              </li>
+              <li>
+                <a href="Tel:+1212-772-4150" class="footerContact">
+                  +1 212-772-4150
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
-  </div>
 </html>
