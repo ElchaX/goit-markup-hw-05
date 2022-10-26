@@ -9,6 +9,10 @@
   --logo-second-color: #000000;
   --border-color: #ececec;
   --border-secondary-color: #eee;
+  --gradient1: rgba(47, 48, 58, 0.4);
+  --gradient2: rgba(255, 255, 255, 0);
+  --logo-clients-color: #afb1b8;
+  --footer-social-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -69,6 +73,11 @@ body {
 .portfolioButton:focus {
   background-color: var(--secondary-color);
   color: var(--main-color);
+  box-shadow: 0px 2px 2px 0px #0000001f;
+
+  box-shadow: 0px 1px 2px 0px #00000014;
+
+  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 .logo {
   text-decoration: none;
@@ -101,6 +110,11 @@ body {
 .navAdress:focus {
   color: var(--secondary-color);
 }
+.header-contacts li a {
+  display: flex;
+  gap: 10px;
+}
+
 .footerAdress {
   color: var(--main-color);
   font-size: 14px;
@@ -180,6 +194,7 @@ body {
 .memberDescription {
   color: var(--secondary-text-color);
   line-height: 1;
+  margin-bottom: 16px;
 }
 .logoSecondColor {
   color: var(--logo-second-color);
@@ -265,7 +280,11 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 .bannerBg {
-  background-color: var(--primary-color);
+  background: linear-gradient(var(--gradient1), var(--gradient2)),
+    url("../images/ImgOverlay.jpg");
+  margin: auto;
+  background-size: cover;
+  max-width: 1600px;
 }
 .rulesDiv {
   display: flex;
@@ -283,11 +302,121 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  width: 270px;
+  height: 168px;
 }
 .footerBg {
   background-color: var(--primary-color);
 }
 
 .header-contacts li {
-  min-width: 120px;
+  min-width: 132px;
+}
+.clientList {
+  margin-top: 50px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.clientIcon {
+  border: 1px solid var(--logo-clients-color);
+
+  fill: var(--logo-clients-color);
+}
+.clientIcon:hover {
+  border: 1px solid var(--secondary-color);
+  fill: var(--secondary-color);
+}
+.header-contacts li:hover {
+  stroke: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+.header-contacts li {
+  stroke: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+}
+.rulesItem h3 {
+  margin-bottom: 10px;
+}
+.rulesItem-bg {
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-portfolio-color);
+  margin-bottom: 30px;
+}
+.icon-rules {
+  margin-left: calc(50% - 35px);
+  margin-top: 25px;
+}
+.teamSocials {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  fill: var(--logo-clients-color);
+  margin-left: 32px;
+}
+
+.teamSocials li:hover,
+.teamSocials li:focus {
+  fill: var(--main-color);
+}
+.teamSocials li a {
+  display: block;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  padding: calc(50% - 10px);
+}
+.teamSocials li a:hover,
+.teamSocials li a:focus {
+  background-color: var(--secondary-color);
+}
+.footerWrapper {
+  display: flex;
+  gap: 70px;
+}
+.footerSocials {
+  padding-block: 60px;
+}
+.footerSocials p {
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--main-color);
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.footerSocialsList {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  fill: var(--main-color);
+}
+.footerSocialsList li a {
+  display: block;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  padding: calc(50% - 10px);
+  background-color: var(--footer-social-color);
+}
+.footerSocialsList li a:hover,
+.footerSocialsList li a:focus {
+  background-color: var(--secondary-color);
+}
+.teamList > li {
+  box-shadow: 0px 2px 1px 0px #00000033;
+
+  box-shadow: 0px 1px 1px 0px #00000024;
+
+  box-shadow: 0px 1px 3px 0px #0000001f;
+}
+.itemList li:hover {
+  box-shadow: 1px 4px 6px 0px #00000029;
+
+  box-shadow: 0px 4px 4px 0px #0000000f;
+
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }

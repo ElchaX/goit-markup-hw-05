@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-     <header>
+   <header>
       <div class="border-div">
         <div class="container">
           <div class="header-style">
@@ -24,9 +24,9 @@
                 >Web<span class="logoSecondColor">Studio</span></a
               >
               <ul class="navbarLinks">
-                <li><a href="./index.html" class="navLink">Studio</a></li>
+                <li><a href="../index.html" class="navLink">Studio</a></li>
                 <li>
-                  <a href="./portfolio.html" class="navLink">Portfolio</a>
+                  <a href="../portfolio.html" class="navLink">Portfolio</a>
                 </li>
                 <li><a href="#" class="navLink">Contacts</a></li>
               </ul>
@@ -34,12 +34,17 @@
             <ul class="header-contacts">
               <li>
                 <a href="mailto:info@devstudio.com" class="navAdress">
+                  <svg class="contactIcon" width="16" height="12"><use href="../images/icons.svg#icon-envelope"></use></svg>
+
                   info@devstudio.com
                 </a>
               </li>
               <li>
                 <a href="Tel:+380961111111" class="navAdress">
-                  +38 096 111 11 11
+                <svg class="contactIcon" width="10" height="16"><use href="../images/icons.svg#icon-smartphone"></use></svg>
+                
+                  +1 212-772-4150
+                
                 </a>
               </li>
             </ul>
@@ -181,9 +186,9 @@
         </div>
       </section>
     </main>
-  <footer>
+    <footer>
       <div class="footerBg">
-        <div class="container">
+        <div class="container"><div class="footerWrapper">
           <div class="footer-style">
           <a href="./index.html" class="logo"
             >Web<span class="logoFooterColor">Studio</span></a
@@ -205,6 +210,16 @@
               </li>
             </ul>
           </address>
+        </div>
+        <div class="footerSocials">
+          <p>find us on</p>
+          <ul class="footerSocialsList">
+              <li><a href="#"><svg class="" width="20" height="20"><use href="../images/icons.svg#icon-instagram"></use></svg></a></li>
+              <li><a href="#"><svg class="" width="20" height="20"><use href="../images/icons.svg#icon-twitter"></use></svg></a></li>
+              <li><a href="#"><svg class="" width="20" height="20"><use href="../images/icons.svg#icon-facebook"></use></svg></a></li>
+              <li><a href="#"><svg class="" width="20" height="20"><use href="../images/icons.svg#icon-linkedin"></use></svg></a></li>
+            </ul>
+        </div>
         </div>
       </div>
     </footer>
