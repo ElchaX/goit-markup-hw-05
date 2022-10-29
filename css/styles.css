@@ -501,6 +501,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: transform 0.25s;
+  z-index: 3;
 }
 .is-hidden {
   transform: translateX(-100%);
