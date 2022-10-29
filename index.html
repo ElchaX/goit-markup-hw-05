@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+   
     <header>
+      <div class="backdrop is-hidden" data-modal><div class="modal"><button class="modal-btn" data-modal-close><span>X</span></button></div>
+          </div>
       <div class="border-div">
         <div class="container">
           <div class="header-style">
@@ -57,10 +60,10 @@
         <div class="container">
           <div class="bannerSection">
             <h1 class="mainSign">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-            <button type="button" class="indexButton">
+            <button type="button" class="indexButton" data-modal-open>
               Request our service
             </button>
-          </div>
+            
         </div>
       </section>
 
@@ -275,5 +278,8 @@
         </div>
       </div>
     </footer>
+      
+    <script src="./js/modal.js"></script>
+   
   </body>
 </html>

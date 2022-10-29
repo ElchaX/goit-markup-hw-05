@@ -29,10 +29,8 @@ body {
   padding: 0 15px;
 }
 .header-style {
-  width: 100%;
   display: flex;
   height: 80px;
-  justify-content: space-around;
 }
 .header-contacts {
   display: flex;
@@ -68,6 +66,8 @@ body {
   font-size: 16px;
   line-height: 1.62;
   border-radius: 4px;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolioButton:hover,
 .portfolioButton:focus {
@@ -94,6 +94,8 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navAdress {
   display: block;
@@ -102,6 +104,8 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navLink:hover,
 .navLink:focus {
@@ -129,6 +133,8 @@ body {
   line-height: 1.71;
   font-style: normal;
   text-decoration: none;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footerContact:hover,
 .footerContact:focus {
@@ -266,8 +272,12 @@ body {
 
 .itemList li {
   flex-basis: calc((100% - 60px) / 3);
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
-.itemList li div {
+.itemList li > div {
   border: 1px solid var(--border-secondary-color);
 }
 
@@ -323,19 +333,24 @@ body {
   border: 1px solid var(--logo-clients-color);
 
   fill: var(--logo-clients-color);
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clientIcon:hover {
   border: 1px solid var(--secondary-color);
   fill: var(--secondary-color);
 }
+.header-contacts li {
+  stroke: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+  transition: fill, stroke 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-contacts li:hover {
   stroke: var(--secondary-color);
   fill: var(--secondary-color);
 }
-.header-contacts li {
-  stroke: var(--secondary-text-color);
-  fill: var(--secondary-text-color);
-}
+
 .rulesItem h3 {
   margin-bottom: 10px;
 }
@@ -356,7 +371,10 @@ body {
   fill: var(--logo-clients-color);
   margin-left: 32px;
 }
-
+.teamSocials li {
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .teamSocials li:hover,
 .teamSocials li:focus {
   fill: var(--main-color);
@@ -367,6 +385,8 @@ body {
   height: 44px;
   width: 44px;
   padding: calc(50% - 10px);
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teamSocials li a:hover,
 .teamSocials li a:focus {
@@ -402,6 +422,8 @@ body {
   width: 44px;
   padding: calc(50% - 10px);
   background-color: var(--footer-social-color);
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footerSocialsList li a:hover,
 .footerSocialsList li a:focus {
@@ -448,4 +470,52 @@ body {
   font-weight: 700;
   margin-top: 27px;
   text-transform: uppercase;
+}
+.itemHoverBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #2196f3e5;
+  transform: translateY(100%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.itemHoverBox p {
+  color: var(--main-color);
+  margin-inline: 24px;
+  margin-top: 63px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.itemList li:hover .itemHoverBox {
+  transform: translate(0, 0);
+}
+.overflowContainer {
+  position: relative;
+  overflow: hidden;
+}
+.backdrop {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s;
+}
+.is-hidden {
+  transform: translateX(-100%);
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background: var(--main-color);
+  margin: auto;
+  padding: 8px;
+}
+.modal-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: calc(100% - 30px);
 }
